@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/A.dir/src/A.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/src/A.cpp",
+  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/src/A.cpp"
+},
+{
+  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/Tetris.dir/main.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/main.cpp",
+  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/main.cpp"
+}
+]
