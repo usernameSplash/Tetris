@@ -163,32 +163,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named A
-
-# Build rule for target.
-A : cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 A
-.PHONY : A
-
-# fast build rule for target.
-A/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/build
-.PHONY : A/fast
-
-#=============================================================================
-# Target rules for targets named Tetris
-
-# Build rule for target.
-Tetris: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tetris
-.PHONY : Tetris
-
-# fast build rule for target.
-Tetris/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/build
-.PHONY : Tetris/fast
-
-#=============================================================================
 # Target rules for targets named ContinuousCoverage
 
 # Build rule for target.
@@ -552,59 +526,57 @@ Experimental/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
 .PHONY : Experimental/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named my_exe
 
-.PHONY : main.o
+# Build rule for target.
+my_exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_exe
+.PHONY : my_exe
 
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/main.cpp.o
-.PHONY : main.cpp.o
+# fast build rule for target.
+my_exe/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/my_exe.dir/build.make src/CMakeFiles/my_exe.dir/build
+.PHONY : my_exe/fast
 
-main.i: main.cpp.i
+#=============================================================================
+# Target rules for targets named go
 
-.PHONY : main.i
+# Build rule for target.
+go: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 go
+.PHONY : go
 
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/main.cpp.i
-.PHONY : main.cpp.i
+# fast build rule for target.
+go/fast:
+	$(MAKE) $(MAKESILENT) -f src/GameObject/CMakeFiles/go.dir/build.make src/GameObject/CMakeFiles/go.dir/build
+.PHONY : go/fast
 
-main.s: main.cpp.s
+#=============================================================================
+# Target rules for targets named Blocks
 
-.PHONY : main.s
+# Build rule for target.
+Blocks: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Blocks
+.PHONY : Blocks
 
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+Blocks/fast:
+	$(MAKE) $(MAKESILENT) -f src/GameObject/Block/CMakeFiles/Blocks.dir/build.make src/GameObject/Block/CMakeFiles/Blocks.dir/build
+.PHONY : Blocks/fast
 
-src/A.o: src/A.cpp.o
+#=============================================================================
+# Target rules for targets named gb
 
-.PHONY : src/A.o
+# Build rule for target.
+gb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gb
+.PHONY : gb
 
-# target to build an object file
-src/A.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/src/A.cpp.o
-.PHONY : src/A.cpp.o
-
-src/A.i: src/A.cpp.i
-
-.PHONY : src/A.i
-
-# target to preprocess a source file
-src/A.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/src/A.cpp.i
-.PHONY : src/A.cpp.i
-
-src/A.s: src/A.cpp.s
-
-.PHONY : src/A.s
-
-# target to generate assembly for a file
-src/A.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/src/A.cpp.s
-.PHONY : src/A.cpp.s
+# fast build rule for target.
+gb/fast:
+	$(MAKE) $(MAKESILENT) -f src/GameObject/GameBoard/CMakeFiles/gb.dir/build.make src/GameObject/GameBoard/CMakeFiles/gb.dir/build
+.PHONY : gb/fast
 
 # Help Target
 help:
@@ -645,14 +617,10 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... A"
-	@echo "... Tetris"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... src/A.o"
-	@echo "... src/A.i"
-	@echo "... src/A.s"
+	@echo "... Blocks"
+	@echo "... gb"
+	@echo "... go"
+	@echo "... my_exe"
 .PHONY : help
 
 

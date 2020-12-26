@@ -1,12 +1,47 @@
 [
 {
-  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build",
-  "command": "/usr/bin/clang++   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/A.dir/src/A.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/src/A.cpp",
-  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/src/A.cpp"
+  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build/src",
+  "command": "/usr/bin/clang++  -I/Users/mini/Desktop/projects/Cpp/Tetris/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/my_exe.dir/main.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/src/main.cpp",
+  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/src/main.cpp"
 },
 {
-  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build",
-  "command": "/usr/bin/clang++   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/Tetris.dir/main.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/main.cpp",
-  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/main.cpp"
+  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build/src/GameObject",
+  "command": "/usr/bin/clang++  -I/Users/mini/Desktop/projects/Cpp/Tetris/include -I/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/go.dir/GameObject.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/GameObject.cpp",
+  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/GameObject.cpp"
+},
+{
+  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build/src/GameObject/Block",
+  "command": "/usr/bin/clang++  -I/Users/mini/Desktop/projects/Cpp/Tetris/include -I/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/Blocks.dir/Block.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block.cpp",
+  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block.cpp"
+},
+{
+  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build/src/GameObject/Block",
+  "command": "/usr/bin/clang++  -I/Users/mini/Desktop/projects/Cpp/Tetris/include -I/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/Blocks.dir/Block1.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block1.cpp",
+  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block1.cpp"
+},
+{
+  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build/src/GameObject/Block",
+  "command": "/usr/bin/clang++  -I/Users/mini/Desktop/projects/Cpp/Tetris/include -I/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/Blocks.dir/Block2.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block2.cpp",
+  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block2.cpp"
+},
+{
+  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build/src/GameObject/Block",
+  "command": "/usr/bin/clang++  -I/Users/mini/Desktop/projects/Cpp/Tetris/include -I/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/Blocks.dir/Block3.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block3.cpp",
+  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block3.cpp"
+},
+{
+  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build/src/GameObject/Block",
+  "command": "/usr/bin/clang++  -I/Users/mini/Desktop/projects/Cpp/Tetris/include -I/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/Blocks.dir/Block4.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block4.cpp",
+  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block4.cpp"
+},
+{
+  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build/src/GameObject/Block",
+  "command": "/usr/bin/clang++  -I/Users/mini/Desktop/projects/Cpp/Tetris/include -I/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/Blocks.dir/Block5.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block5.cpp",
+  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/Block/Block5.cpp"
+},
+{
+  "directory": "/Users/mini/Desktop/projects/Cpp/Tetris/build/src/GameObject/GameBoard",
+  "command": "/usr/bin/clang++  -I/Users/mini/Desktop/projects/Cpp/Tetris/include -I/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/GameBoard/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/gb.dir/GameBoard.cpp.o -c /Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/GameBoard/GameBoard.cpp",
+  "file": "/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/GameBoard/GameBoard.cpp"
 }
 ]

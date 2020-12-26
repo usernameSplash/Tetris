@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/GameObject.cpp
+iostream
+-
+GameObject.hpp
+/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/GameObject.hpp
+
+/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/GameObject.hpp
+

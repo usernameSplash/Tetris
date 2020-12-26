@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgo.a CMakeFiles/go.dir/GameObject.cpp.o
+/usr/bin/ranlib libgo.a

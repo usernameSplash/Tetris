@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libA.a"
+			"path" : "src/GameObject/libgo.a"
 		}
 	],
 	"backtrace" : 1,
@@ -11,11 +11,12 @@
 	{
 		"commands" : 
 		[
-			"ADD_LIBRARY"
+			"add_library",
+			"target_include_directories"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"src/GameObject/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -25,7 +26,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -39,6 +46,17 @@
 					"fragment" : "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15"
 				}
 			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/Users/mini/Desktop/projects/Cpp/Tetris/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/mini/Desktop/projects/Cpp/Tetris/src/GameObject/include"
+				}
+			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
@@ -46,13 +64,13 @@
 			]
 		}
 	],
-	"id" : "A::@6890427a1f51a3e7e1df",
-	"name" : "A",
-	"nameOnDisk" : "libA.a",
+	"id" : "go::@cf4d02a5657504c132a7",
+	"name" : "go",
+	"nameOnDisk" : "libgo.a",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "src/GameObject",
+		"source" : "src/GameObject"
 	},
 	"sourceGroups" : 
 	[
@@ -69,7 +87,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/A.cpp",
+			"path" : "src/GameObject/GameObject.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -1,15 +1,10 @@
 
 #pragma once
 
-class A
+class GameObject
 {
 public:
     int x;
-
-    A()
-    {
-        x = 10;
-    }
-
+    GameObject();
     void ASDF();
 };

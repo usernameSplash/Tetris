@@ -72,19 +72,16 @@ CMAKE_BINARY_DIR = /Users/mini/Desktop/projects/Cpp/Tetris/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/A.dir/all
-all: CMakeFiles/Tetris.dir/all
+all: src/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/A.dir/clean
-clean: CMakeFiles/Tetris.dir/clean
 clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousBuild.dir/clean
@@ -113,62 +110,88 @@ clean: CMakeFiles/NightlyStart.dir/clean
 clean: CMakeFiles/ExperimentalMemCheck.dir/clean
 clean: CMakeFiles/Continuous.dir/clean
 clean: CMakeFiles/Experimental.dir/clean
+clean: src/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/A.dir
+# Directory level rules for directory src
 
-# All Build rule for target.
-CMakeFiles/A.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles --progress-num=1,2 "Built target A"
-.PHONY : CMakeFiles/A.dir/all
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/my_exe.dir/all
+src/all: src/GameObject/all
 
-# Build rule for subdir invocation for target.
-CMakeFiles/A.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/A.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 0
-.PHONY : CMakeFiles/A.dir/rule
+.PHONY : src/all
 
-# Convenience name for target.
-A : CMakeFiles/A.dir/rule
+# Recursive "preinstall" directory target.
+src/preinstall: src/GameObject/preinstall
 
-.PHONY : A
+.PHONY : src/preinstall
 
-# clean rule for target.
-CMakeFiles/A.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/clean
-.PHONY : CMakeFiles/A.dir/clean
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/my_exe.dir/clean
+src/clean: src/GameObject/clean
+
+.PHONY : src/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Tetris.dir
+# Directory level rules for directory src/GameObject
 
-# All Build rule for target.
-CMakeFiles/Tetris.dir/all: CMakeFiles/A.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles --progress-num=3,4 "Built target Tetris"
-.PHONY : CMakeFiles/Tetris.dir/all
+# Recursive "all" directory target.
+src/GameObject/all: src/GameObject/CMakeFiles/go.dir/all
+src/GameObject/all: src/GameObject/Block/all
+src/GameObject/all: src/GameObject/GameBoard/all
 
-# Build rule for subdir invocation for target.
-CMakeFiles/Tetris.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Tetris.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 0
-.PHONY : CMakeFiles/Tetris.dir/rule
+.PHONY : src/GameObject/all
 
-# Convenience name for target.
-Tetris: CMakeFiles/Tetris.dir/rule
+# Recursive "preinstall" directory target.
+src/GameObject/preinstall: src/GameObject/Block/preinstall
+src/GameObject/preinstall: src/GameObject/GameBoard/preinstall
 
-.PHONY : Tetris
+.PHONY : src/GameObject/preinstall
 
-# clean rule for target.
-CMakeFiles/Tetris.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/clean
-.PHONY : CMakeFiles/Tetris.dir/clean
+# Recursive "clean" directory target.
+src/GameObject/clean: src/GameObject/CMakeFiles/go.dir/clean
+src/GameObject/clean: src/GameObject/Block/clean
+src/GameObject/clean: src/GameObject/GameBoard/clean
+
+.PHONY : src/GameObject/clean
+
+#=============================================================================
+# Directory level rules for directory src/GameObject/Block
+
+# Recursive "all" directory target.
+src/GameObject/Block/all: src/GameObject/Block/CMakeFiles/Blocks.dir/all
+
+.PHONY : src/GameObject/Block/all
+
+# Recursive "preinstall" directory target.
+src/GameObject/Block/preinstall:
+
+.PHONY : src/GameObject/Block/preinstall
+
+# Recursive "clean" directory target.
+src/GameObject/Block/clean: src/GameObject/Block/CMakeFiles/Blocks.dir/clean
+
+.PHONY : src/GameObject/Block/clean
+
+#=============================================================================
+# Directory level rules for directory src/GameObject/GameBoard
+
+# Recursive "all" directory target.
+src/GameObject/GameBoard/all: src/GameObject/GameBoard/CMakeFiles/gb.dir/all
+
+.PHONY : src/GameObject/GameBoard/all
+
+# Recursive "preinstall" directory target.
+src/GameObject/GameBoard/preinstall:
+
+.PHONY : src/GameObject/GameBoard/preinstall
+
+# Recursive "clean" directory target.
+src/GameObject/GameBoard/clean: src/GameObject/GameBoard/CMakeFiles/gb.dir/clean
+
+.PHONY : src/GameObject/GameBoard/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ContinuousCoverage.dir
@@ -925,6 +948,114 @@ Experimental: CMakeFiles/Experimental.dir/rule
 CMakeFiles/Experimental.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/clean
 .PHONY : CMakeFiles/Experimental.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/my_exe.dir
+
+# All Build rule for target.
+src/CMakeFiles/my_exe.dir/all: src/GameObject/CMakeFiles/go.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/my_exe.dir/build.make src/CMakeFiles/my_exe.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/my_exe.dir/build.make src/CMakeFiles/my_exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles --progress-num=12,13 "Built target my_exe"
+.PHONY : src/CMakeFiles/my_exe.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/my_exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/my_exe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/my_exe.dir/rule
+
+# Convenience name for target.
+my_exe: src/CMakeFiles/my_exe.dir/rule
+
+.PHONY : my_exe
+
+# clean rule for target.
+src/CMakeFiles/my_exe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/my_exe.dir/build.make src/CMakeFiles/my_exe.dir/clean
+.PHONY : src/CMakeFiles/my_exe.dir/clean
+
+#=============================================================================
+# Target rules for target src/GameObject/CMakeFiles/go.dir
+
+# All Build rule for target.
+src/GameObject/CMakeFiles/go.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/GameObject/CMakeFiles/go.dir/build.make src/GameObject/CMakeFiles/go.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/GameObject/CMakeFiles/go.dir/build.make src/GameObject/CMakeFiles/go.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles --progress-num=10,11 "Built target go"
+.PHONY : src/GameObject/CMakeFiles/go.dir/all
+
+# Build rule for subdir invocation for target.
+src/GameObject/CMakeFiles/go.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GameObject/CMakeFiles/go.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 0
+.PHONY : src/GameObject/CMakeFiles/go.dir/rule
+
+# Convenience name for target.
+go: src/GameObject/CMakeFiles/go.dir/rule
+
+.PHONY : go
+
+# clean rule for target.
+src/GameObject/CMakeFiles/go.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/GameObject/CMakeFiles/go.dir/build.make src/GameObject/CMakeFiles/go.dir/clean
+.PHONY : src/GameObject/CMakeFiles/go.dir/clean
+
+#=============================================================================
+# Target rules for target src/GameObject/Block/CMakeFiles/Blocks.dir
+
+# All Build rule for target.
+src/GameObject/Block/CMakeFiles/Blocks.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/GameObject/Block/CMakeFiles/Blocks.dir/build.make src/GameObject/Block/CMakeFiles/Blocks.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/GameObject/Block/CMakeFiles/Blocks.dir/build.make src/GameObject/Block/CMakeFiles/Blocks.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Blocks"
+.PHONY : src/GameObject/Block/CMakeFiles/Blocks.dir/all
+
+# Build rule for subdir invocation for target.
+src/GameObject/Block/CMakeFiles/Blocks.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GameObject/Block/CMakeFiles/Blocks.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 0
+.PHONY : src/GameObject/Block/CMakeFiles/Blocks.dir/rule
+
+# Convenience name for target.
+Blocks: src/GameObject/Block/CMakeFiles/Blocks.dir/rule
+
+.PHONY : Blocks
+
+# clean rule for target.
+src/GameObject/Block/CMakeFiles/Blocks.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/GameObject/Block/CMakeFiles/Blocks.dir/build.make src/GameObject/Block/CMakeFiles/Blocks.dir/clean
+.PHONY : src/GameObject/Block/CMakeFiles/Blocks.dir/clean
+
+#=============================================================================
+# Target rules for target src/GameObject/GameBoard/CMakeFiles/gb.dir
+
+# All Build rule for target.
+src/GameObject/GameBoard/CMakeFiles/gb.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/GameObject/GameBoard/CMakeFiles/gb.dir/build.make src/GameObject/GameBoard/CMakeFiles/gb.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/GameObject/GameBoard/CMakeFiles/gb.dir/build.make src/GameObject/GameBoard/CMakeFiles/gb.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles --progress-num=8,9 "Built target gb"
+.PHONY : src/GameObject/GameBoard/CMakeFiles/gb.dir/all
+
+# Build rule for subdir invocation for target.
+src/GameObject/GameBoard/CMakeFiles/gb.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GameObject/GameBoard/CMakeFiles/gb.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mini/Desktop/projects/Cpp/Tetris/build/CMakeFiles 0
+.PHONY : src/GameObject/GameBoard/CMakeFiles/gb.dir/rule
+
+# Convenience name for target.
+gb: src/GameObject/GameBoard/CMakeFiles/gb.dir/rule
+
+.PHONY : gb
+
+# clean rule for target.
+src/GameObject/GameBoard/CMakeFiles/gb.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/GameObject/GameBoard/CMakeFiles/gb.dir/build.make src/GameObject/GameBoard/CMakeFiles/gb.dir/clean
+.PHONY : src/GameObject/GameBoard/CMakeFiles/gb.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBlocks.a CMakeFiles/Blocks.dir/Block.cpp.o CMakeFiles/Blocks.dir/Block1.cpp.o CMakeFiles/Blocks.dir/Block2.cpp.o CMakeFiles/Blocks.dir/Block3.cpp.o CMakeFiles/Blocks.dir/Block4.cpp.o CMakeFiles/Blocks.dir/Block5.cpp.o
+/usr/bin/ranlib libBlocks.a

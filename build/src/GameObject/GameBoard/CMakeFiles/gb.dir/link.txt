@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgb.a CMakeFiles/gb.dir/GameBoard.cpp.o
+/usr/bin/ranlib libgb.a

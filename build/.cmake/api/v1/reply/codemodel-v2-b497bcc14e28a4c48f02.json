@@ -6,6 +6,10 @@
 			[
 				{
 					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0.0"
@@ -14,7 +18,6 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
 						1,
 						2,
 						3,
@@ -42,7 +45,71 @@
 						25,
 						26,
 						27,
-						28,
+						28
+					]
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						31
+					]
+				},
+				{
+					"build" : "src/GameObject",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/GameObject",
+					"targetIndexes" : 
+					[
+						30
+					]
+				},
+				{
+					"build" : "src/GameObject/Block",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/GameObject/Block",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/GameObject/GameBoard",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/GameObject/GameBoard",
+					"targetIndexes" : 
+					[
 						29
 					]
 				}
@@ -53,7 +120,11 @@
 				{
 					"directoryIndexes" : 
 					[
-						0
+						0,
+						1,
+						2,
+						3,
+						4
 					],
 					"name" : "Tetris",
 					"targetIndexes" : 
@@ -87,17 +158,19 @@
 						26,
 						27,
 						28,
-						29
+						29,
+						30,
+						31
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 0,
-					"id" : "A::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-A-Debug-2417bec690c3be9fdb6b.json",
-					"name" : "A",
+					"directoryIndex" : 3,
+					"id" : "Blocks::@c691e9332ab96e70fed7",
+					"jsonFile" : "target-Blocks-Debug-aca048d4770ecaab7141.json",
+					"name" : "Blocks",
 					"projectIndex" : 0
 				},
 				{
@@ -297,10 +370,24 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 0,
-					"id" : "Tetris::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Tetris-Debug-54ce354913d3d274422a.json",
-					"name" : "Tetris",
+					"directoryIndex" : 4,
+					"id" : "gb::@44f0dc3faaf53db1ca66",
+					"jsonFile" : "target-gb-Debug-86c01f1c6906ca9c0707.json",
+					"name" : "gb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "go::@cf4d02a5657504c132a7",
+					"jsonFile" : "target-go-Debug-4ca98f6ad275c06f5adb.json",
+					"name" : "go",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "my_exe::@145eef247bfb46b6828c",
+					"jsonFile" : "target-my_exe-Debug-bf78ea493f42a625f2d1.json",
+					"name" : "my_exe",
 					"projectIndex" : 0
 				}
 			]
